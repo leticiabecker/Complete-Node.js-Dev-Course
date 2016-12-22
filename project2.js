@@ -82,7 +82,7 @@ console.log(getBalance(leticiasAccount));
 
 var existingAccount = getAccount('leticiabecker');
 console.log(getBalance(existingAccount));
-// In this case, we don't know the name of the account variable, but we do know the username. So, we use the getAccount function to find the correspondent account for the user name 'leticiabecker'. Once we find the account, we can reach other properties of the object, like the balance.
+// In this case, we don't know the name of the account object, but we do know the username. So, we use the getAccount function to find the correspondent account for the user name 'leticiabecker'. Once we find the account, we store it in a variavle and can reach other properties of the object, like the balance.
 
 
 // Creating other accounts
@@ -91,6 +91,7 @@ var jensAccount = creatAccount({
   balance: 100,
 });
 
+//to see what is stored inside de Array accounts
 console.log(accounts);
 
 var existingJensAccount = getAccount('jenny');
